@@ -74,6 +74,12 @@ The Python client script performs the following operations:
 * Delete object  
 
 ---
+### Updating an Object (Versioning)
+* With versioning **enabled**, each update creates a **new version**; previous versions are preserved.
+* Without versioning, updates simply overwrite the object.
+* Use `list_objects(..., include_version=True)` to see all versions and their Version IDs.
+
+---
 
 ## Notes
 
