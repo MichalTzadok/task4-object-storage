@@ -62,3 +62,10 @@
 4. **Wasabi, Backblaze B2** – External cloud services supporting S3.  
 
 **Common Uses:** Storing images, videos, backups, documents, analytics data, and more.
+
+---
+### Updating an Object (Versioning)
+* With versioning **enabled**, each update creates a **new version**; previous versions are preserved.
+* Without versioning, updates simply overwrite the object.
+* Use `list_objects(..., include_version=True)` to see all versions and their Version IDs.
+
